@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>iFRAME</title>
+    <style>
+        a{
+            text-decoration: none;
+        }
+        iframe{
+            border: 0;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+      <table frame="box" rules="all" height="500px" width="100%" >
+        <tr>
+          <th colspan="2" ><h1>iFrame with target</h1></th>
+        </tr>
+        <tr>
+          <td width="20%" align="center" valign="center">
+            <a href="HtmlDoc.html" target="myIframe">HTML</a><br><br><br /><br /><br /><br />
+            <a href="CssDoc.Html" target="myIframe">CSS</a><br><br><br /><br /><br /><br />
+            <a href="JsDoc.html"target="myIframe">JS</a><br><br><br /><br /><br /><br />
+            <a href="CssDoc.Html" target="myIframe">REACT JS</a>
+        </td>
+          <td>
+            <!-- to open in iframe
+            <iframe src="HtmlDoc.html" width="700px" height="400px"></iframe> -->
+            <iframe src="HtmlDoc.html" width="100%" height="100%" name="myIframe"></iframe>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
