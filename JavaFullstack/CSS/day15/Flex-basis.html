@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flex basis</title>
+    <style>
+        #flexContainer{
+            width: 500px;
+            height: 300px;
+            box-shadow: 0 0 4px green;
+            margin: 50px auto;
+            display: flex;
+            /* flex-direction: row-reverse; */
+            flex-direction: row;
+        }
+        .flexItem1{
+            background-color: lightcoral;
+            flex-basis: 400px;
+        }
+        .flexItem2{
+            background-color: lightgray;
+            flex-basis: 300px;
+        }
+        .flexItem3{
+            background-color: lightblue;
+            flex-basis: 200px;
+        }
+        .flexItem4{
+            background-color: lightyellow;
+            flex-basis: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="flexContainer">
+        <div class="flexItem1">Flex Item 1</div>
+        <div class="flexItem2">Flex Item 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas aperiam fugiat similique tenetur at distinctio incidunt rerum cupiditate tempore ex.</div>
+        <div class="flexItem3">Flex Item 3</div>
+        <div class="flexItem4">Flex Item 4</div>
+    </div>
+</body>
+</html>

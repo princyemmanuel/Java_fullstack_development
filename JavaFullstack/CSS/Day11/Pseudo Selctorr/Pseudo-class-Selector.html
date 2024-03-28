@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo class Document</title>
+    <style>
+        button:disabled{
+            background-color: rgb(223, 120, 120);
+        }
+        button:hover{
+            color: brown;
+        }
+        input:checked{
+            outline: 2px solid red;
+        }
+        ol li:first-child{
+            color: green;
+        }
+        ol li:last-child{
+            color: red;
+        }
+        ol li:nth-child(3){
+            color: blueviolet;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Pseudo Class Selector</h1>
+      <input type="text" />
+      <button>Not Disabled</button>
+      <button disabled>Disabled</button>
+      <input type="checkbox" />Html
+      <ol>
+        <li>Html</li>
+        <li>Css</li>
+        <li>React</li>
+        <li>Javascript</li>
+        <li>Java</li>
+      </ol>
+    </div>
+  </body>
+</html>

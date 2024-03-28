@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element Document</title>
+    <style>
+        p::selection{
+            background-color: lightcoral;
+            color: blue;
+        }
+        ul li::marker{
+            color: rgb(18, 206, 18);
+        }
+        ol li::marker{
+            color: rgb(201, 60, 107);
+        }
+        p::first-line{
+            color: red;
+        }
+        p::first-letter{
+            font-size: 50px;
+            color: green;
+        }
+        input::file-selector-button{
+            color: rgb(21, 21, 70);
+            border: 3px rgb(122, 100, 201) solid;
+            background-color: rgb(139, 110, 110);
+        }
+        input::placeholder{
+            color: rgb(133, 185, 42);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Pseudo Element </h1>
+        <ul>
+            <li>Samsung</li>
+            <li>Iphone</li>
+            <li>One plus</li>
+        </ul>
+        <ol>
+            <li>Samsung</li>
+            <li>Iphone</li>
+            <li>One plus</li>
+        </ol>
+        <input type="text" placeholder="Enter your text"/>
+        <input type="file" />
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus aspernatur dignissimos, aperiam facilis ab sapiente iste illum recusandae odio. Adipisci harum quod atque facere suscipit dolore commodi rem veritatis, reprehenderit nulla sit libero distinctio quidem quos corrupti rerum, illo eveniet officia, accusantium optio corporis esse magni. Blanditiis quas veritatis soluta.</p>
+    </div>
+</body>
+</html>

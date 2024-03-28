@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex column</title>
+    <style>
+        #flexContainer{
+            width: 800px;
+            height: 400px;
+            border: 3px solid hotpink;
+            display: flex;
+            flex-direction: row;
+        }
+        .column1{
+            width: 100px;
+            background-color: lightgreen;     }
+            .column2{
+            width: 100px;
+            background-color: rgb(81, 100, 151)     }
+            .column3{
+            width: 100px;
+            background-color: rgb(150, 65, 93)     }
+            .column4{
+            width: 100px;
+            background-color: rgb(126, 190, 42)     }
+    </style>
+  </head>
+  <body>
+    <div id="flexContainer">
+      <div class="column1">Column 1</div>
+      <div class="column2">Column 2</div>
+      <div class="column3">Column 3</div>
+      <div class="column4">Column 4</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Items</title>
+    <style>
+        #flexContainer{
+            width: 800px;
+            height: 500px;
+            border: 2px solid red;
+            margin: 30px auto;
+            display: flex;
+            /* justify-content: center;
+            align-items: center; */
+            /* justify-content: flex-end;
+            align-items: flex-end; */
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+        .item1{
+            background-color: lightcoral;
+            height: 100px;
+            width: 100px;
+        }
+        .item2{
+            background-color: lightgreen;
+            height: 100px;
+            width: 100px;
+        }
+        .item3{
+            background-color: lightskyblue;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="flexContainer">
+        <div class="item1">Item1</div>
+        <div class="item2">Item2</div>
+        <div class="item3">item3</div>
+    </div>
+</body>
+</html>

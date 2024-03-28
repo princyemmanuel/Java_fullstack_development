@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animations</title>
+    <style>
+        @keyframes ChangeBGC{
+            from{
+                width: 800px;
+                height: 500px;
+                background-color: lightcoral;
+            }
+            to{
+                width: 400px;
+                height: 200px;
+                background-color: lightgreen;
+            }
+        }
+        @keyframes myAnimations{
+            0%{
+                width: 200px;
+                height: 400px;
+                border-radius: 10%;
+            }
+            30%{
+                width: 400px;
+                height: 400px;
+                border-radius: 30%;
+            }
+            60%{
+                width: 600px;
+                height: 400px;
+                border-radius: 50%;
+            }
+            70%{
+                width: 800px;
+                height: 400px;
+                border-radius: 70%;
+            }  100%{
+                width: 100px;
+                height: 400px;
+                border-radius: 100%;
+            }
+            
+        }
+        .container{
+            width: 800px;
+            height: 400px;
+            box-shadow: 0 0 10px green;
+            margin: 60px auto;
+            animation-name:myAnimations;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html
