@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Document</title>
+    <style>
+        input[type="range"],input[type="radio"],input[type="checkbox"]{
+            accent-color: rgb(50, 97, 197);
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Form Input Controls Example</h1>
+        <label>Name:</label>
+        <input type="text" placeholder="Enter your name"/>
+        <label>Password:</label>
+        <input type="password" placeholder="Enter your password"/>
+        <br>
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email"/>
+        <br>
+        <label>Age:</label>
+        <input type="number" value="18"/>
+        <br>
+        <label>Rating</label>
+        <input type="range" min="1" max="100" value="50">
+        <br>
+        <label>Date of Birth:</label>
+        <input type="date" value="01/01/2000"/>
+        <br>
+        <label>Time</label>
+        <input type="time" value="12:00"/>
+        <br>
+        <label>Image:</label>
+        <img width="150px" height="50px" src="https://www.bing.com/th?id=OIP.7ng8jCJZOZ8YC5Pfq4y1fgHaE8&w=154&h=103&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="catimage">
+        <br>
+        <label>Week:</label>
+        <input type="week"/>
+        <br>
+        <br>
+        <label>Month</label>
+        <input type="month"/>
+        <br>
+        <br>
+        <label>Daytime-Local</label>
+        <input type="datetime-local"/>
+        <br>
+        <br>
+        <label>URL:</label>
+        <input type="text"/>
+        <br>
+        <br>
+        <label>Search:</label>
+        <input type="text"/>
+        <br>
+        <br>
+        <label>Gender:</label>
+        <br>
+        <br>
+        <input type="radio" name="gender"/><label>Male</label>
+        <input type="radio" name="gender"/><label>Female</label>
+        <br>
+        <br>
+        <label>Interest:</label>
+        <br>
+        <br>
+        <input type="checkbox"><label>Reading</label>
+        <input type="checkbox"><label>Sports</label>
+        <br>
+        <br>
+        <label>Country</label>
+        <select>
+            <option>United states</option>
+            <option>UK</option>
+            <option>India</option>
+        </select>
+        <br>
+        <br>
+        <label>Message:</label>
+        <br>
+        <textarea cols="60" rows="5" placeholder="Enter yor message"></textarea>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
