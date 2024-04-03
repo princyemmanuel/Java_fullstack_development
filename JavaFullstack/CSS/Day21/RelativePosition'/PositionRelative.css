@@ -1,0 +1,29 @@
+
+html{
+    border: 2px solid gray;
+    padding: 20px;
+}
+body{
+    border: 2px solid blue;
+    padding: 20px;
+}
+.mainContainer{
+    width: 1000px;
+    height: 500px;
+    border: 2px solid red;
+    padding: 20px;
+}
+.container{
+    width: 500px;
+    height: 300px;
+    border: 2px solid green;
+    /* padding: 20px; */
+}
+.box1{
+    width:100px ;
+    height:100px;
+    background-color: aquamarine;
+    position: relative;
+    top: 80px;
+    right: 10px;
+}
