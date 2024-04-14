@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ques 4</title>
+    <style>
+        *{
+            margin: 0;
+        }
+      .gridContainer {
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 15% 75% 10%;
+      }
+      .header {
+        background-color: rgb(42, 41, 41);
+        color: white;
+        padding: 30px 0px;
+       text-align: center;
+        grid-column: 1/3;
+        grid-row: 1/2;
+      }
+      .sideBar {
+        background-color: rgb(232, 232, 227);
+        padding: 20px 10px;
+        grid-column: 1/2;
+        grid-row: 2/3;
+      }
+      .main{
+        padding: 20px 10px;
+        grid-column: 2/3;
+        grid-row: 2/3;
+      }
+      .footer {
+        background-color:rgb(42, 41, 41);
+        color: white;
+        padding: 20px 0px;
+        text-align:  center;
+        grid-column: 1/3;
+        grid-row: 3/4;
+      }h2{
+        padding: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gridContainer">
+      <div class="header">
+        <h1>Header</h1>
+      </div>
+      <div class="sideBar">
+        <h2>Side Bar</h2>
+        <p>
+         The menu or quick access content
+        </p>
+      </div>
+      <div class="main">
+        <h2>Main Content</h2>
+        <p>
+        The core website content should be displayed here
+        </p>
+      </div>
+      <div class="footer">
+        <h2>Footer</h2>
+      </div>
+    </div>
+  </body>
+</html>
