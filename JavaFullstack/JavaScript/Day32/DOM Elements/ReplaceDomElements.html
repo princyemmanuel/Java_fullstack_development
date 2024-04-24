@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #root {
+        width: 500px;
+        padding: 50px 30px;
+        text-align: center;
+        box-shadow: 0 0 10px green;
+        margin: 30px auto;
+      }
+    </style>
+    <script>
+      function replaceDomElement() {
+        var h2Ref = document.querySelector('h2');
+        var h1Ref = document.createElement('h1');
+
+        h1Ref.innerText = "H2 replaced to h1";
+
+        h2Ref.replaceWith(h1Ref);
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="root">
+      <h2>Replace DOM Element</h2>
+      <button onclick="replaceDomElement()">Replace</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #root {
+        width: 500px;
+        padding: 50px 30px;
+        text-align: center;
+        box-shadow: 0 0 10px green;
+        margin: 30px auto;
+      }
+    </style>
+    <script>
+      function createDomElement() {
+        var pRef = document.querySelector("p");
+        pRef.remove();
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="root">
+      <h2>Remove DOM Element</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, saepe labore aliquam odit aspernatur totam sed temporibus assumenda ab non possimus magni esse dolorum nesciunt ducimus pariatur, quisquam obcaecati animi dolor nostrum architecto repellat cumque nulla? Eligendi iste eos explicabo!</p>
+      <button onclick="createDomElement()">Remove</button>
+    </div>
+  </body>
+</html>

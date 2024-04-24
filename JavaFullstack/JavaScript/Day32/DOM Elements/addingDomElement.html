@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Adding Dom Elements in Dom Tree</title>
+    <style>
+      #root {
+        width: 500px;
+        box-shadow: 0 0 10px green;
+        padding: 20px;
+        margin: 50px auto;
+        text-align: center;
+      }
+    </style>
+    <script>
+      function createDomElement() {
+        var divRef = document.getElementById("root");
+        var paraDomElement = document.createElement("p");
+        console.log(paraDomElement);
+        // to assign text in new paragraph
+        paraDomElement.innerText = "This is a new paragraph";
+
+        //=====Adding to DOM tree
+        divRef.appendChild(paraDomElement);
+
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <h2>Creating DOM Elements</h2>
+      <button onclick="createDomElement()">ADD DOM </button>
+    </div>
+  </body>
+</html>
