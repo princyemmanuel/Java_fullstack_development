@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Event Bubbling</title>
+    <link rel="stylesheet" href="Bubbling.css"/>
+    <script>
+        function dummy(){
+            alert("Dummy Button Click")
+        }
+        function dummy1(){
+            alert("Dummy Grandparent")
+        }
+        function dummy2(){
+            alert("Dummy parent")
+        }
+    </script>
+</head>
+<body>
+    <div id="grandParent" onclick="dummy1()">
+        <H1
+        <div id="parent" onclick="dummy2()">
+            <div id="child">
+                <button onclick="dummy()">Click Me</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

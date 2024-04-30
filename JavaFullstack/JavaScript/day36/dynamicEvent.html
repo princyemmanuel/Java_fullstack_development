@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dynamic Events</title>
+    <script>
+        function FnaddEventListener(){
+            // var buttonDomElement = document.querySelector("button");
+            // buttonDomElement.addEventListener("click",fnAddedEventListener);
+
+            document.querySelector("button").addEventListener("click",fnAddedEventListener)
+        }
+        function fnAddedEventListener(){
+            alert("Event Listener Added");
+        }
+        function fnAddedEventListener(){
+            alert("Event Listener Added");
+        }
+        function FnremoveEventListener(){
+            document.querySelector("button").removeEventListener("click",fnAddedEventListener)
+        }
+    </script>
+</head>
+<body>
+    <h2>Dynamic Events</h2>
+    <input type="radio" name="event" onclick="FnaddEventListener()">
+    <label> Add event listener</label>
+    <input type="radio" name="event" onclick="FnremoveEventListener()">
+    <label> Remove event listener</label>
+    <br><br>
+    <button>Without Event Listener</button>
+</body>
+</html
