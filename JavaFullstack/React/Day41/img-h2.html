@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script>
+        var imgDomElement = React.createElement('img',{src:"https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg?s=612x612&w=0&k=20&c=tyLvtzutRh22j9GqSGI33Z4HpIwv9vL_MZw_xOE19NQ=", width :"300px",height :"300px"});
+
+        var h2DomElement = React.createElement('h2',null,"My h2 Element");
+
+        var divDomElement = React.createElement('div',null,[imgDomElement, h2DomElement]);
+
+        ReactDOM.render(divDomElement, document.getElementById('root'));
+    </script>
+  </body>
+</html>
