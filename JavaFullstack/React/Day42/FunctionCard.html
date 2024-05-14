@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #card {
+        width: 230px;
+        box-shadow: 0 0 7px blue;
+        padding: 20px;
+      }
+      img {
+        height: 200px;
+        width: 100%;
+      }
+      #box {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function createCard(url) {
+        return (
+          <div id="card">
+            <img src={url} alt="profilepic" />
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <button>Profile</button>
+          </div>
+        );
+      }
+
+      function App() {
+        return (
+          <div id="box">
+            {createCard(
+              "https://media.istockphoto.com/id/1311084168/photo/overjoyed-pretty-asian-woman-look-at-camera-with-sincere-laughter.webp?b=1&s=170667a&w=0&k=20&c=XPuGhP9YyCWquTGT-tUFk6TwI-HZfOr1jNkehKQ17g0="
+            )}
+            {createCard(
+              "https://media.istockphoto.com/id/1335085335/photo/portrait-of-smiling-indian-woman-show-thumb-up-give-recommendation.jpg?s=612x612&w=0&k=20&c=sXq8AO_sK6cMLuXMEghau5xKUgpTnczh7s6dK7l9rE4="
+            )}
+            {createCard(
+              "https://media.istockphoto.com/id/1338134319/photo/portrait-of-young-indian-businesswoman-or-school-teacher-pose-indoors.jpg?s=612x612&w=0&k=20&c=Dw1nKFtnU_Bfm2I3OPQxBmSKe9NtSzux6bHqa9lVZ7A="
+            )}
+            {createCard(
+              "https://media.istockphoto.com/id/1317804578/photo/one-businesswoman-headshot-smiling-at-the-camera.jpg?s=612x612&w=0&k=20&c=EqR2Lffp4tkIYzpqYh8aYIPRr-gmZliRHRxcQC5yylY="
+            )}
+          </div>
+        );
+      }
+      ReactDOM.render(App(), document.getElementById("root"));
+    </script>
+  </body>
+</html>

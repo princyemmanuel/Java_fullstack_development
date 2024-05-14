@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        #card{
+            width: 230px;
+            box-shadow: 0 0 7px blue;
+            padding: 20px;
+        }
+        img{
+            height: 200px;
+            width: 100%;
+        }
+        #box{
+          display: flex;
+          justify-content: space-between;
+        }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+   
+    <script type="text/babel">
+     var userCard = (
+        <div id="card">
+            <img src="https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg?s=612x612&w=0&k=20&c=tyLvtzutRh22j9GqSGI33Z4HpIwv9vL_MZw_xOE19NQ=" alt="profilepic"/>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <button>Profile</button>
+        </div>
+    )
+    var container = (
+      <div id="box">
+        <div id="card">
+            <img src="https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg?s=612x612&w=0&k=20&c=tyLvtzutRh22j9GqSGI33Z4HpIwv9vL_MZw_xOE19NQ=" alt="profilepic"/>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <button>Profile</button>
+        </div>
+        <div id="card">
+            <img src="https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg?s=612x612&w=0&k=20&c=tyLvtzutRh22j9GqSGI33Z4HpIwv9vL_MZw_xOE19NQ=" alt="profilepic"/>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <button>Profile</button>
+        </div>
+        <div id="card">
+            <img src="https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg?s=612x612&w=0&k=20&c=tyLvtzutRh22j9GqSGI33Z4HpIwv9vL_MZw_xOE19NQ=" alt="profilepic"/>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <button>Profile</button>
+        </div>
+      </div>
+    )
+
+    var reusableCard = (
+      <div id="box">
+        {userCard}{userCard}{userCard}{userCard}
+      </div>
+    )
+    ReactDOM.render(reusableCard,document.getElementById('root'))
+    </script>
+  </body>
+</html>
