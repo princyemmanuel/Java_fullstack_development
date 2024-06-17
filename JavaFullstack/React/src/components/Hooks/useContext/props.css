@@ -1,0 +1,28 @@
+.AContainer{
+    width: 1000px;
+    height: 600px;
+    box-shadow: 0 0 8px green;
+    margin: 10px auto;
+    text-align: center;
+}
+.BContainer{
+    width: 700px;
+    height: 400px;
+    box-shadow: 0 0 8px blue;
+    margin: 10px auto;
+    text-align: center;
+}
+.CContainer{
+    width: 600px;
+    height: 300px;
+    box-shadow: 0 0 8px red;
+    margin: 10px auto;
+    text-align: center;
+}
+.DContainer{
+    width: 400px;
+    height: 200px;
+    box-shadow: 0 0 8px violet;
+    margin: 10px auto;
+    text-align: center;
+}

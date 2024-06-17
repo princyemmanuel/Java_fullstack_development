@@ -1,0 +1,22 @@
+.container{
+    padding: 30px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    height: 90%;
+    width: 80%;
+    box-shadow: 0 0 10px blue;
+
+}
+.imgDiv{
+    background-color: greenyellow;
+    grid-column: 1/2;
+    grid-row:1/2
+}
+.contentDiv{
+    
+    grid-column: 2/4;
+    grid-row: 1/2;
+    padding: 20px;
+    margin: 20px;
+}
