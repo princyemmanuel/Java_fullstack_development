@@ -1,0 +1,11 @@
+package Day16;
+import java.util.*;
+
+public class ScannerClass {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter int value : ");
+        int a = sc.nextInt();
+        System.out.println("Value : "+a);
+    }
+}
